@@ -6,16 +6,30 @@ import {
   Sparkles,
 } from "lucide-react";
 import Link from "next/link";
+import LightRays from "../component/LightRays";
 import SplitText from "../component/SplitText";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white overflow-hidden relative selection:bg-blue-500/30 font-sans">
-      {/* Background Gradients */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-indigo-500/10 rounded-full blur-[120px] -z-10"></div>
-      <div className="absolute bottom-0 right-0 w-[800px] h-[600px] bg-blue-500/5 rounded-full blur-[120px] -z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none">
+        <LightRays
+          raysColor="#ffffff"
+          raysSpeed={1.5}
+          lightSpread={0.8}
+          rayLength={1.2}
+          followMouse={true}
+          mouseInfluence={0.1}
+          noiseAmount={0.1}
+          distortion={0.05}
+          className="w-full h-full"
+        />
+      </div>
+      {/* Background Gradients - Commented out to prefer LightRays */}
+      {/* <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-indigo-500/10 rounded-full blur-[120px] -z-10"></div>
+      <div className="absolute bottom-0 right-0 w-[800px] h-[600px] bg-blue-500/5 rounded-full blur-[120px] -z-10"></div> */}
 
-      <main className="container mx-auto px-6 py-24 min-h-screen flex flex-col justify-center items-center">
+      <main className="container mx-auto px-6 py-24 min-h-screen flex flex-col justify-center items-center relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20 animate-in fade-in slide-in-from-bottom-5 duration-700">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-slate-400 mb-6 hover:bg-white/10 transition-colors backdrop-blur-sm cursor-default">
             <Sparkles className="w-3 h-3 text-yellow-400" />
