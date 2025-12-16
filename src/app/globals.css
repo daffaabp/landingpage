@@ -2,6 +2,30 @@
 @plugin "@tailwindcss/typography";
 @plugin "@tailwindcss/forms";
 
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.05);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.95);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -20,6 +44,8 @@
   --color-background-dark: #1f1f1f;
   --color-brand-dark: #4a1d24;
   --color-brand-darker: #2d0f13;
+  --animate-blob: blob 10s infinite;
+  --animate-scroll: scroll 60s linear infinite;
 }
 
 @media (prefers-color-scheme: dark) {

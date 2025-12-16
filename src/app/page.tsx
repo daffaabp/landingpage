@@ -1,4 +1,10 @@
-import { ArrowRight, Layout, Palette, Sparkles } from "lucide-react";
+import {
+  ArrowRight,
+  BrainCircuit,
+  Layout,
+  Palette,
+  Sparkles,
+} from "lucide-react";
 import Link from "next/link";
 import SplitText from "../component/SplitText";
 
@@ -66,6 +72,18 @@ export default function Home() {
             <Sparkles className="w-4 h-4 text-[#2563EB] group-hover:text-white transition-colors" />
             <span className="font-medium text-slate-300 group-hover:text-white">
               Variant 03
+            </span>
+            <ArrowRight className="w-4 h-4 text-slate-500 group-hover:text-white -ml-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+          </Link>
+
+          {/* Variant 04 Button */}
+          <Link
+            href="/landing04"
+            className="group relative px-6 py-3 rounded-full bg-white/5 border border-white/10 hover:bg-[#1E3A8A] hover:border-[#1E3A8A] hover:text-white transition-all duration-300 flex items-center gap-3 backdrop-blur-sm"
+          >
+            <BrainCircuit className="w-4 h-4 text-[#D97706] group-hover:text-white transition-colors" />
+            <span className="font-medium text-slate-300 group-hover:text-white">
+              Variant 04
             </span>
             <ArrowRight className="w-4 h-4 text-slate-500 group-hover:text-white -ml-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
           </Link>
