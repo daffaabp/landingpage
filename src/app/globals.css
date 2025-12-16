@@ -44,6 +44,21 @@
   --color-background-dark: #1f1f1f;
   --color-brand-dark: #4a1d24;
   --color-brand-darker: #2d0f13;
+
+  /* Landing 05 Colors */
+  --color-brand-purple: #6d28d9;
+  --color-brand-darkPurple: #4c1d95;
+  --color-brand-lightPurple: #f3e8ff;
+  --color-brand-orange: #fbbf24;
+  --color-brand-darkOrange: #d97706;
+  --color-brand-bg: #ffffff;
+  --color-brand-bgAlt: #f9fafb;
+
+  /* Landing 05 Fonts & Shadows */
+  --font-heading: var(--font-poppins), sans-serif;
+  --shadow-soft: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
+  --shadow-card:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --animate-blob: blob 10s infinite;
   --animate-scroll: scroll 60s linear infinite;
 }

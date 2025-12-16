@@ -1,6 +1,7 @@
 import {
   ArrowRight,
   BrainCircuit,
+  GraduationCap,
   Layout,
   Palette,
   Sparkles,
@@ -98,6 +99,18 @@ export default function Home() {
             <BrainCircuit className="w-4 h-4 text-[#D97706] group-hover:text-white transition-colors" />
             <span className="font-medium text-slate-300 group-hover:text-white">
               Variant 04
+            </span>
+            <ArrowRight className="w-4 h-4 text-slate-500 group-hover:text-white -ml-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+          </Link>
+
+          {/* Variant 05 Button */}
+          <Link
+            href="/landing05"
+            className="group relative px-6 py-3 rounded-full bg-white/5 border border-white/10 hover:bg-[#6D28D9] hover:border-[#6D28D9] hover:text-white transition-all duration-300 flex items-center gap-3 backdrop-blur-sm"
+          >
+            <GraduationCap className="w-4 h-4 text-[#FBBF24] group-hover:text-white transition-colors" />
+            <span className="font-medium text-slate-300 group-hover:text-white">
+              Variant 05
             </span>
             <ArrowRight className="w-4 h-4 text-slate-500 group-hover:text-white -ml-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
           </Link>
